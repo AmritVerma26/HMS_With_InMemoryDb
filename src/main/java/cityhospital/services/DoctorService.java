@@ -7,5 +7,5 @@ public interface DoctorService {
     Doctor acceptDoctor(Doctor doctor);
     Doctor getDoctorById(int id) throws DoctorDetailsNotFoundException;
     void updateDoctorById(Doctor doctor)throws DoctorDetailsNotFoundException;
-    boolean removeDoctorById(int id)throws DoctorDetailsNotFoundException;
+    void removeDoctorById(int id)throws DoctorDetailsNotFoundException;
 }
