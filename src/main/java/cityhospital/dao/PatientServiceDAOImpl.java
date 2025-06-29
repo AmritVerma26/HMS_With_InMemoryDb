@@ -16,12 +16,6 @@ public class PatientServiceDAOImpl implements PatientServiceDAO{
         return DBUtil.patientHashMap.get(id);
     }
 
-//    @Override
-//    public void updatePatient(Patient patient) {
-//        DBUtil.patientHashMap.put(patient.getPatientId(), patient);
-//        System.out.println("Patient data are updated : " +patient);
-//    }
-
     @Override
     public void updatePatient(Patient patient) {
         if (DBUtil.patientHashMap.containsKey(patient.getPatientId())) {
