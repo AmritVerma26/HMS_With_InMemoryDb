@@ -13,7 +13,7 @@ import cityhospital.services.PatientServiceImpl;
 public class Main {
     public static void main(String[] args)  {
 
-        System.out.println("********** Doctor Details : ************ ");
+        System.out.println("********** Doctor Records : ************ ");
         DoctorService doctorService = new DoctorServiceServiceImpl();
 
         System.out.println("Accept Doctor - ");
@@ -51,7 +51,7 @@ public class Main {
         }
 
 
-        System.out.println("******* Patient Details : ************");
+        System.out.println("******* Patient Records : ************");
         PatientService patientService = new PatientServiceImpl();
 
         System.out.println("Accept Patient - ");
@@ -60,7 +60,6 @@ public class Main {
         System.out.println(patientService.acceptPatient(new Patient("Geeta", "s", 60, "B+" ,99234412)));
 
         System.out.println("Retrieve patient based on id - ");
-
         try {
             Patient retrieved = patientService.getPatientById(1);
             System.out.println("Patient details retrieved: " + retrieved);
